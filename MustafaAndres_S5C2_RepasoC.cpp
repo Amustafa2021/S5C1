@@ -2,11 +2,13 @@
 #include<iostream>
 #include<cmath>
 using namespace std;
+
 void exp(float mivarflotante, int mivarentera){
   float suma = mivarflotante;
   for (int i=0; i<mivarentera; i++) {
     float suma = suma*mivarflotante;
-  return suma;
+  }
+  cout << suma;
   }
 
 int main() {
