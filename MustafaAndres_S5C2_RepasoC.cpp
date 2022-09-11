@@ -3,7 +3,10 @@
 #include<cmath>
 using namespace std;
 void exp(float mivarflotante, int mivarentera){
-  return mivarflottante**mivarentera;
+  float suma = mivarflotante;
+  for (int i=0; i<mivarentera; i++) {
+    float suma = suma*mivarflotante;
+  return suma;
   }
 
 int main() {
@@ -13,7 +16,7 @@ int main() {
   cout << "El resultado es " << MyDec/MyNum;
   int Arreglo = rand() % 901;
   
-  for (int i=0;i<300; i+) {
+  for (int i=0;i<300; i++) {
     cout << Arreglo[i] << "\n";
   }
   
