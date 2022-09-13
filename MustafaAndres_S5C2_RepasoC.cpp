@@ -5,7 +5,7 @@ using namespace std;
 
 void exp(float mivarflotante, int mivarentera){
   float potencia = pow(mivarflotante,mivarentera);
-  cout << potencia;
+  cout << potencia << "\n";
   }
 
 int main() {
@@ -24,8 +24,9 @@ int main() {
   }
     
   cout << "\n";
-  cout << Arreglo[5] << "\n";
+  cout << Arreglo[4] << "\n";
   int LongArreglo = sizeof(Arreglo)/sizeof(int);
+  cout << "La longitud del arreglo es " << LongArreglo << "\n";
   exp(17.5 , 5);
 } 
  
