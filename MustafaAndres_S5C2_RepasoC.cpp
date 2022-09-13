@@ -4,18 +4,16 @@
 using namespace std;
 
 void exp(float mivarflotante, int mivarentera){
-  float suma = mivarflotante;
-  for (int i=0; i<mivarentera; i++) {
-    float suma = suma*mivarflotante;
+  float potencia = pow(mivarflotante,mivarentera);
   }
-  cout << suma;
+  cout << potencia;
   }
 
 int main() {
   int MyNum=69;
   double MyDec=8.8;
-  cout << "La primera tiene un valor de " << MyNum << " y la segunda tiene un valor de" << MyDec;
-  cout << "El resultado es " << MyDec/MyNum;
+  cout << "La primera tiene un valor de " << MyNum << " y la segunda tiene un valor de " << MyDec << "\n"
+  cout << "El resultado es " << MyDec/MyNum << "\n"
   int Arreglo [300];
   
   for (int i=0;i<300; i++) {
@@ -25,9 +23,10 @@ int main() {
   for (int i=0;i<300; i++) {
     cout << Arreglo[i] << " ";
   }
-  cout << Arreglo[5];
+    
+  cout << "\n";
+  cout << Arreglo[5] << "\n";
   int LongArreglo = sizeof(Arreglo)/sizeof(int);
-  
   exp(17.5 , 5);
 } 
  
