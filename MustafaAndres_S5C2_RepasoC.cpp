@@ -16,10 +16,14 @@ int main() {
   double MyDec=8.8;
   cout << "La primera tiene un valor de " << MyNum << " y la segunda tiene un valor de" << MyDec;
   cout << "El resultado es " << MyDec/MyNum;
-  Arreglo = rand() % 901;
+  int Arreglo [300];
   
   for (int i=0;i<300; i++) {
-    cout << Arreglo[i] << "\n";
+    Arreglo[i] = rand()%900;
+  }
+
+  for (int i=0;i<300; i++) {
+    cout << Arreglo[i] << " ";
   }
   cout << Arreglo[5];
   int LongArreglo = sizeof(Arreglo)/sizeof(int);
