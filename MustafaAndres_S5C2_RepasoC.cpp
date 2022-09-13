@@ -5,15 +5,14 @@ using namespace std;
 
 void exp(float mivarflotante, int mivarentera){
   float potencia = pow(mivarflotante,mivarentera);
-  }
   cout << potencia;
   }
 
 int main() {
   int MyNum=69;
   double MyDec=8.8;
-  cout << "La primera tiene un valor de " << MyNum << " y la segunda tiene un valor de " << MyDec << "\n"
-  cout << "El resultado es " << MyDec/MyNum << "\n"
+  cout << "La primera tiene un valor de " << MyNum << " y la segunda tiene un valor de " << MyDec << "\n";
+  cout << "El resultado es " << MyDec/MyNum << "\n";
   int Arreglo [300];
   
   for (int i=0;i<300; i++) {
