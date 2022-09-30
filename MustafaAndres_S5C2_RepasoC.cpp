@@ -49,16 +49,21 @@ int main() {
       }
       i++;
   }
+  
   void imprimir(){
     ofstream archivo;
     archivo.open('imprimir.dat',ios::out);
     for (int i=0;i<300; i++) {
     archivo << Arreglo[i] << ", ";
   }
+  }
+  void imprimir(){
+    ofstream archivo2;
+    archivo2.open('imprimir2.dat',ios::out);
     int i=0;
   while (Arreglo[i] <801);{
       if (Arreglo[i]%2 != 0){
-          archivo << Arreglo[i] << ", ";
+          archivo2 << Arreglo[i] << ", ";
       }
       i++;
 } 
