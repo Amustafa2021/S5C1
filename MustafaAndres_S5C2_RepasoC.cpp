@@ -2,14 +2,14 @@
 #include<iostream>
 #include<cmath>
 #include<fstream>
-#include<windows.h>
+
 using namespace std;
 
 void exp(float mivarflotante, int mivarentera){
   float potencia = pow(mivarflotante,mivarentera);
   cout << potencia << "\n";
   }
-void imprimir();
+
   
  
 int main() {
@@ -18,14 +18,15 @@ int main() {
   cout << "La primera tiene un valor de: " << MyNum << " y la segunda tiene un valor de: " << MyDec << "\n";
   cout << "El resultado es: " << MyDec/MyNum << "\n";
   int Arreglo [300];
-    
+
+  ofstream archivo("aleatorios.txt");
   for (int i=0;i<300; i++) {
     Arreglo[i] = rand()%900;
-  }
-
-  for (int i=0;i<300; i++) {
     cout << Arreglo[i] << ", ";
+    archivo << Arreglo[i] << ", ";
   }
+    archivo.close();
+
     
   cout << "\n";
   cout << Arreglo[4] << "\n";
@@ -41,31 +42,19 @@ int main() {
       }
    }
   cout << "El menor es: " << Menor << "\n";
-  
   int i=0;
   while (Arreglo[i] <801);{
       if (Arreglo[i]%2 != 0){
-          cout << Arreglo[i] << ", ";
+          cout << Arreglo[i] << ", "; 
       }
       i++;
   }
-  
-  void imprimir(){
-    ofstream archivo;
-    archivo.open('imprimir.dat',ios::out);
-    for (int i=0;i<300; i++) {
-    archivo << Arreglo[i] << ", ";
+  ofstream archiv("aleatorios_con_pares.txt");
+  for (int i=0;i<300; i++) {
+    if (Arreglo[i]%2 != 0){
+  archiv << Arreglo[i] << ", ";
+    }
   }
-  }
-  void imprimir(){
-    ofstream archivo2;
-    archivo2.open('imprimir2.dat',ios::out);
-    int i=0;
-  while (Arreglo[i] <801);{
-      if (Arreglo[i]%2 != 0){
-          archivo2 << Arreglo[i] << ", ";
-      }
-      i++;
-} 
- 
+  archiv.close();
+}
   
