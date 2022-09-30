@@ -1,14 +1,17 @@
 #include <cstdlib>
 #include<iostream>
 #include<cmath>
+#include<fstream>
+#include<windows.h>
 using namespace std;
 
 void exp(float mivarflotante, int mivarentera){
   float potencia = pow(mivarflotante,mivarentera);
   cout << potencia << "\n";
   }
-
+void imprimir();
   
+ 
 int main() {
   int MyNum=69;
   double MyDec=8.8;
@@ -46,6 +49,18 @@ int main() {
       }
       i++;
   }
+  void imprimir(){
+    ofstream archivo;
+    archivo.open('imprimir.dat',ios::out);
+    for (int i=0;i<300; i++) {
+    archivo << Arreglo[i] << ", ";
+  }
+    int i=0;
+  while (Arreglo[i] <801);{
+      if (Arreglo[i]%2 != 0){
+          archivo << Arreglo[i] << ", ";
+      }
+      i++;
 } 
  
   
