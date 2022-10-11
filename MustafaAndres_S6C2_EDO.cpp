@@ -20,8 +20,8 @@ double euler(double t0, double y0, double tf, double h){
   do{
     e = 100*(y-analitica(t,y))/analitica(t,y);
     cout << e << " ";
-    y = y0 + h*yprima(t,y);
-    t = t0 + h;
+    y = y + h*yprima(t,y);
+    t = t + h;
   }while(t<tf);
 }
  
