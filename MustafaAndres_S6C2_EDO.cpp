@@ -22,7 +22,7 @@ double euler(double t0, double y0, double tf, double h){
     cout << e << " ";
     y = y0 + h*yprima(t,y);
     t = t0 + h;
-  }while(t<=tf);
+  }while(t<tf);
 }
  
 int main(){
